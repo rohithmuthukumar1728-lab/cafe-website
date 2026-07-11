@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffetto - Premium Peruvian coffee since 1930. Exceptional quality, handpicked beans, delivered fresh to your door.">
+    <meta name="keywords" content="coffee, peruvian coffee, premium coffee, fresh coffee, coffetto">
+    <meta name="author" content="Coffetto">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Swiper CSS (for testimonial slider) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Coffetto - Premium Coffee</title>
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="assets/img/cafe-logo.png" alt="Coffetto logo">
+                <span>Coffetto</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#process" class="nav__link">Process</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Reviews</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__search" id="search-button" aria-label="Search">
+                    <i class="ri-search-line"></i>
+                </button>
+                <button class="nav__cart" id="cart-button" aria-label="Cart">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== SEARCH ==================== -->
+    <div class="search" id="search">
+        <div class="search__container container">
+            <div class="search__input-wrap">
+                <i class="ri-search-line search__icon"></i>
+                <input type="text" class="search__input" placeholder="Search our coffee..." id="search-input">
+                <button class="search__close" id="search-close">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="search__suggestions">
+                <span class="search__suggestion" data-term="espresso">Espresso</span>
+                <span class="search__suggestion" data-term="cappuccino">Cappuccino</span>
+                <span class="search__suggestion" data-term="latte">Latte</span>
+                <span class="search__suggestion" data-term="cold brew">Cold Brew</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CART ==================== -->
+    <div class="cart" id="cart">
+        <div class="cart__container container">
+            <div class="cart__header">
+                <h3 class="cart__title">Your Cart</h3>
+                <button class="cart__close" id="cart-close">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <div class="cart__items" id="cart-items">
+                <p class="cart__empty">Your cart is empty</p>
+            </div>
+
+            <div class="cart__footer" id="cart-footer">
+                <div class="cart__total">
+                    <span>Total:</span>
+                    <span class="cart__total-price" id="cart-total">$0.00</span>
+                </div>
+                <button class="button cart__checkout" id="checkout-btn">
+                    Checkout <i class="ri-arrow-right-line"></i>
+                </button>
+                <button class="cart__clear" id="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="main">
+
+        <!-- ==================== HOME ==================== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__subtitle">Welcome to Coffetto</span>
+                    <h1 class="home__title">
+                        Life begins<br>
+                        after <span class="home__highlight">coffee</span>
+                    </h1>
+                    <p class="home__description">
+                        Experience the finest Peruvian coffee, handpicked from the Andes mountains.
+                        Each cup tells a story of tradition, quality, and passion dating back to 1930.
+                    </p>
+                    <div class="home__buttons">
+                        <a href="#products" class="button home__btn">
+                            Explore Menu <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <a href="#about" class="button home__btn home__btn-ghost">
+                            Our Story
+                        </a>
+                    </div>
+
+                    <div class="home__stats">
+                        <div class="home__stat">
+                            <span class="home__stat-number">90+</span>
+                            <span class="home__stat-label">Coffee Varieties</span>
+                        </div>
+                        <div class="home__stat">
+                            <span class="home__stat-number">93</span>
+                            <span class="home__stat-label">Years of Heritage</span>
+                        </div>
+                        <div class="home__stat">
+                            <span class="home__stat-number">50k+</span>
+                            <span class="home__stat-label">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__visual">
+                    <div class="home__img-wrap">
+                        <img src="assets/img/home-coffee.png" alt="Premium coffee cup" class="home__img">
+                        <div class="home__badge">
+                            <i class="ri-award-fill"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                    <div class="home__shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__header section-header">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">A Legacy of<br>Exceptional Coffee</h2>
+                    <p class="section-subtitle">
+                        From the misty highlands of Peru to your morning cup
+                    </p>
+                </div>
+
+                <div class="about__content grid">
+                    <div class="about__img-wrap">
+                        <img src="assets/img/about-coffee.png" alt="Coffee plantation in Peru" class="about__img">
+                        <div class="about__experience">
+                            <span class="about__experience-number">93</span>
+                            <span class="about__experience-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="ri-leaf-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="about__feature-title">100% Organic</h4>
+                                <p class="about__feature-text">
+                                    All our coffee beans are grown without pesticides or chemicals,
+                                    ensuring a pure and natural taste in every cup.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="ri-hand-heart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="about__feature-title">Handpicked with Care</h4>
+                                <p class="about__feature-text">
+                                    Our expert farmers hand-select only the ripest cherries,
+                                    guaranteeing superior flavor and quality.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="ri-fire-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="about__feature-title">Freshly Roasted</h4>
+                                <p class="about__feature-text">
+                                    Each batch is roasted to order, locking in the rich aromatics
+                                    and delivering peak freshness to your door.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="ri-recycle-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="about__feature-title">Sustainably Sourced</h4>
+                                <p class="about__feature-text">
+                                    We partner directly with Peruvian farmers, ensuring fair wages
+                                    and environmentally responsible practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PRODUCTS ==================== -->
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="products__header section-header">
+                    <span class="section-tag">Our Menu</span>
+                    <h2 class="section-title">Discover Our<br>Finest Selections</h2>
+                    <p class="section-subtitle">
+                        Each blend crafted to deliver a unique and memorable experience
+                    </p>
+                </div>
+
+                <div class="products__filters">
+                    <button class="products__filter active-filter" data-filter="all">All</button>
+                    <button class="products__filter" data-filter="espresso">Espresso</button>
+                    <button class="products__filter" data-filter="brewed">Brewed</button>
+                    <button class="products__filter" data-filter="specialty">Specialty</button>
+                    <button class="products__filter" data-filter="cold">Cold</button>
+                </div>
+
+                <div class="products__grid">
+
+                    <!-- Product 1 -->
+                    <article class="product-card" data-category="espresso">
+                        <div class="product-card__badge">Bestseller</div>
+                        <div class="product-card__img-wrap">
+                            <img src="assets/img/product-coffee-1.png" alt="Classic Espresso" class="product-card__img">
+                            <div class="product-card__overlay">
+                                <button class="product-card__add-btn" data-name="Classic Espresso" data-price="17.90" data-img="assets/img/product-coffee-1.png">
+                                    <i class="ri-shopping-bag-line"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span>(124)</span>
+                            </div>
+                            <h3 class="product-card__name">Classic Espresso</h3>
+                            <p class="product-card__desc">Bold and intense single-origin espresso from Peru</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$17.90</span>
+                                <span class="product-card__weight">250g</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card" data-category="espresso">
+                        <div class="product-card__img-wrap">
+                            <img src="assets/img/product-coffee-2.png" alt="Black Coffee" class="product-card__img">
+                            <div class="product-card__overlay">
+                                <button class="product-card__add-btn" data-name="Black Coffee" data-price="24.90" data-img="assets/img/product-coffee-2.png">
+                                    <i class="ri-shopping-bag-line"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                                <span>(89)</span>
+                            </div>
+                            <h3 class="product-card__name">Black Coffee</h3>
+                            <p class="product-card__desc">Smooth and rich dark roast for the purist</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$24.90</span>
+                                <span class="product-card__weight">250g</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card" data-category="specialty">
+                        <div class="product-card__badge product-card__badge--new">New</div>
+                        <div class="product-card__img-wrap">
+                            <img src="assets/img/product-coffee-3.png" alt="Strong Coffee" class="product-card__img">
+                            <div class="product-card__overlay">
+                                <button class="product-card__add-btn" data-name="Strong Coffee" data-price="32.90" data-img="assets/img/product-coffee-3.png">
+                                    <i class="ri-shopping-bag-line"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span>(201)</span>
+                            </div>
+                            <h3 class="product-card__name">Strong Coffee</h3>
+                            <p class="product-card__desc">Extra bold blend with deep chocolatey notes</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$32.90</span>
+                                <span class="product-card__weight">250g</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card" data-category="brewed">
+                        <div class="product-card__img-wrap">
+                            <img src="assets/img/product-coffee-1.png" alt="Pour Over Blend" class="product-card__img">
+                            <div class="product-card__overlay">
+                                <button class="product-card__add-btn" data-name="Pour Over Blend" data-price="22.90" data-img="assets/img/product-coffee-1.png">
+                                    <i class="ri-shopping-bag-line"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <span>(67)</span>
+                            </div>
+                            <h3 class="product-card__name">Pour Over Blend</h3>
+                            <p class="product-card__desc">Light and floral, perfect for slow mornings</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$22.90</span>
+                                <span class="product-card__weight">250g</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card" data-category="cold">
+                        <div class="product-card__badge">Popular</div>
+                        <div class="product-card__img-wrap">
+                            <img src="assets/img/product-coffee-2.png" alt="Cold Brew Reserve" class="product-card__img">
+                            <div class="product-card__overlay">
+                                <button class="product-card__add-btn" data-name="Cold Brew Reserve" data-price="19.90" data-img="assets/img/product-coffee-2.png">
+                                    <i class="ri-shopping-bag-line"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span>(156)</span>
+                            </div>
+                            <h3 class="product-card__name">Cold Brew Reserve</h3>
+                            <p class="product-card__desc">Slow-steeped 24hr cold brew, smooth and refreshing</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$19.90</span>
+                                <span class="product-card__weight">500ml</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card" data-category="specialty">
+                        <div class="product-card__badge product-card__badge--new">New</div>
+                        <div class="product-card__img-wrap">
+                            <img src="assets/img/product-coffee-3.png" alt="Caramel Latte Blend" class="product-card__img">
+                            <div class="product-card__overlay">
+                                <button class="product-card__add-btn" data-name="Caramel Latte Blend" data-price="27.90" data-img="assets/img/product-coffee-3.png">
+                                    <i class="ri-shopping-bag-line"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                                <span>(94)</span>
+                            </div>
+                            <h3 class="product-card__name">Caramel Latte Blend</h3>
+                            <p class="product-card__desc">Sweet caramel notes with a creamy vanilla finish</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$27.90</span>
+                                <span class="product-card__weight">250g</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROCESS ==================== -->
+        <section class="process section" id="process">
+            <div class="container">
+                <div class="process__header section-header section-header--light">
+                    <span class="section-tag section-tag--light">How It Works</span>
+                    <h2 class="section-title section-title--light">From Bean to Cup</h2>
+                    <p class="section-subtitle section-subtitle--light">
+                        A meticulous 4-step process to deliver perfection
+                    </p>
+                </div>
+
+                <div class="process__grid">
+                    <div class="process__step">
+                        <div class="process__step-number">01</div>
+                        <div class="process__step-icon">
+                            <i class="ri-seedling-line"></i>
+                        </div>
+                        <h3 class="process__step-title">Sourcing</h3>
+                        <p class="process__step-text">
+                            We partner directly with Peruvian farmers in the Andes, selecting
+                            only the highest-grade Arabica beans grown at optimal altitudes.
+                        </p>
+                    </div>
+
+                    <div class="process__step">
+                        <div class="process__step-number">02</div>
+                        <div class="process__step-icon">
+                            <i class="ri-sun-line"></i>
+                        </div>
+                        <h3 class="process__step-title">Drying</h3>
+                        <p class="process__step-text">
+                            Beans are carefully dried using wet or dry processing methods,
+                            depending on the flavor profile we want to achieve.
+                        </p>
+                    </div>
+
+                    <div class="process__step">
+                        <div class="process__step-number">03</div>
+                        <div class="process__step-icon">
+                            <i class="ri-fire-line"></i>
+                        </div>
+                        <h3 class="process__step-title">Roasting</h3>
+                        <p class="process__step-text">
+                            Master roasters bring out unique flavors through precise temperature
+                            control and timing, unlocking each bean's full potential.
+                        </p>
+                    </div>
+
+                    <div class="process__step">
+                        <div class="process__step-number">04</div>
+                        <div class="process__step-icon">
+                            <i class="ri-cup-line"></i>
+                        </div>
+                        <h3 class="process__step-title">Brewing</h3>
+                        <p class="process__step-text">
+                            Freshly roasted beans are ground and brewed to deliver an
+                            exceptional cup with rich aromatics and smooth flavor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIALS ==================== -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="testimonials__header section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What Our Customers<br>Say About Us</h2>
+                    <p class="section-subtitle">
+                        Real reviews from our beloved coffee community
+                    </p>
+                </div>
+
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Review 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-card__text">
+                                    "The best coffee I've ever had! The Classic Espresso is incredibly
+                                    smooth and bold. I've been ordering from Coffetto for over a year
+                                    now and won't switch to anything else."
+                                </p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="testimonial-card__name">Sarah Mitchell</h4>
+                                        <span class="testimonial-card__role">Coffee Enthusiast</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-card__text">
+                                    "The Cold Brew Reserve is my go-to during summer. It's smooth,
+                                    not bitter at all, and you can really taste the quality. The
+                                    packaging keeps it fresh for days!"
+                                </p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="testimonial-card__name">James Rodriguez</h4>
+                                        <span class="testimonial-card__role">Regular Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                                <p class="testimonial-card__text">
+                                    "I gifted the Strong Coffee to my dad and he loved it. The
+                                    chocolatey notes are amazing. Now the whole family orders
+                                    from Coffetto. Great quality at a fair price."
+                                </p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="testimonial-card__name">Emily Chen</h4>
+                                        <span class="testimonial-card__role">Gift Buyer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="testimonial-card__text">
+                                    "As a barista, I'm very particular about my coffee at home.
+                                    Coffetto's Pour Over Blend is exceptional. The flavor clarity
+                                    and consistency are top-notch every single time."
+                                </p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="testimonial-card__name">Marcus Thompson</h4>
+                                        <span class="testimonial-card__role">Professional Barista</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== GALLERY ==================== -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="gallery__header section-header">
+                    <span class="section-tag">Gallery</span>
+                    <h2 class="section-title">Moments of<br>Coffee Joy</h2>
+                </div>
+
+                <div class="gallery__grid">
+                    <div class="gallery__item gallery__item--large">
+                        <img src="assets/img/home-coffee.png" alt="Coffee pour" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <i class="ri-zoom-in-line"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="assets/img/about-coffee.png" alt="Coffee beans" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <i class="ri-zoom-in-line"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="assets/img/steps-green-coffee.png" alt="Green coffee" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <i class="ri-zoom-in-line"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="assets/img/steps-coffee-beans.png" alt="Coffee beans roasting" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <i class="ri-zoom-in-line"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__item gallery__item--tall">
+                        <img src="assets/img/steps-ground-coffee.png" alt="Ground coffee" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <i class="ri-zoom-in-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__content grid">
+                    <!-- Contact Info -->
+                    <div class="contact__info">
+                        <div class="contact__header">
+                            <span class="section-tag">Get in Touch</span>
+                            <h2 class="section-title">Visit Us or<br>Say Hello</h2>
+                            <p class="section-subtitle">
+                                We'd love to hear from you. Reach out for orders,
+                                partnerships, or just to chat about coffee.
+                            </p>
+                        </div>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact__detail-title">Location</h4>
+                                    <p class="contact__detail-text">123 Coffee Lane, Lima, Peru</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact__detail-title">Phone</h4>
+                                    <p class="contact__detail-text">+51 123 456 789</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact__detail-title">Email</h4>
+                                    <p class="contact__detail-text">hello@coffetto.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact__detail-title">Hours</h4>
+                                    <p class="contact__detail-text">Mon-Sat: 7AM - 9PM<br>Sun: 8AM - 6PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__social">
+                            <a href="#" class="contact__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                            <a href="#" class="contact__social-link" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                            <a href="#" class="contact__social-link" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+                            <a href="#" class="contact__social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form-wrap">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <label for="contact-name" class="form__label">Full Name</label>
+                                <input type="text" id="contact-name" class="form__input" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="contact-email" class="form__label">Email Address</label>
+                                <input type="email" id="contact-email" class="form__input" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="contact-subject" class="form__label">Subject</label>
+                                <select id="contact-subject" class="form__input form__select" required>
+                                    <option value="" disabled selected>Choose a topic</option>
+                                    <option value="order">Order Inquiry</option>
+                                    <option value="wholesale">Wholesale</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="contact-message" class="form__label">Message</label>
+                                <textarea id="contact-message" class="form__input form__textarea" placeholder="Tell us what's on your mind..." rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="button form__submit">
+                                Send Message <i class="ri-send-plane-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== NEWSLETTER ==================== -->
+        <section class="newsletter section">
+            <div class="container">
+                <div class="newsletter__content">
+                    <div class="newsletter__text">
+                        <h2 class="newsletter__title">Stay Caffeinated</h2>
+                        <p class="newsletter__description">
+                            Subscribe for exclusive deals, brewing tips, and early access to new blends.
+                        </p>
+                    </div>
+                    <form class="newsletter__form" id="newsletter-form">
+                        <div class="newsletter__input-wrap">
+                            <input type="email" class="newsletter__input" placeholder="Enter your email" required>
+                            <button type="submit" class="button newsletter__btn">
+                                Subscribe <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                        <p class="newsletter__note">
+                            <i class="ri-shield-check-line"></i> No spam. Unsubscribe anytime.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="container">
+                <div class="footer__content grid">
+                    <!-- Brand -->
+                    <div class="footer__brand">
+                        <a href="#home" class="footer__logo">
+                            <img src="assets/img/logo.png" alt="Coffetto logo">
+                            <span>Coffetto</span>
+                        </a>
+                        <p class="footer__brand-text">
+                            Premium Peruvian coffee, delivered fresh to your door.
+                            Crafted with passion since 1930.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#about" class="footer__link">About Us</a></li>
+                            <li><a href="#products" class="footer__link">Products</a></li>
+                            <li><a href="#process" class="footer__link">Our Process</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Support</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">FAQ</a></li>
+                            <li><a href="#" class="footer__link">Shipping Policy</a></li>
+                            <li><a href="#" class="footer__link">Return Policy</a></li>
+                            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer__link">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer__contact">
+                        <h4 class="footer__links-title">Contact</h4>
+                        <ul class="footer__list">
+                            <li class="footer__contact-item">
+                                <i class="ri-map-pin-line"></i>
+                                <span>123 Coffee Lane, Lima, Peru</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="ri-phone-line"></i>
+                                <span>+51 123 456 789</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="ri-mail-line"></i>
+                                <span>hello@coffetto.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer__copy">
+                        &copy; 2024 Coffetto. All rights reserved. Crafted with
+                        <i class="ri-heart-fill"></i> in Peru.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCROLL UP ==================== -->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightbox-close">
+            <i class="ri-close-line"></i>
+        </button>
+        <img src="" alt="Gallery image" class="lightbox__img" id="lightbox-img">
+    </div>
+
+    <!-- ==================== TOAST ==================== -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
