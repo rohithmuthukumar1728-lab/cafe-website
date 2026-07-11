@@ -1,0 +1,25 @@
+{
+  "name": "coffetto-website",
+  "version": "1.0.0",
+  "description": "Coffetto - Premium Peruvian Coffee Website. A responsive single-page marketing site built with HTML, CSS, and vanilla JavaScript.",
+  "main": "coffee-website-main/index.html",
+  "scripts": {
+    "start": "npx serve coffee-website-main",
+    "dev": "npx live-server coffee-website-main --port=3000"
+  },
+  "keywords": [
+    "coffee",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "peruvian-coffee"
+  ],
+  "author": "Coffetto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
