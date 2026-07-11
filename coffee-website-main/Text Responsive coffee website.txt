@@ -4,115 +4,161 @@ Coffetto
 
 .nav__link
 Home
-
 About
-
-Steps
-
-Testimonial
+Products
+Process
+Reviews
+Contact
 
 
 ========== HOME ==========
 .home__subtitle
-EXCEPTIONAL QUALITY
+Welcome to Coffetto
 
 .home__title
-It's time for a <br>
-good coffee
+Life begins after coffee
 
 .home__description
-Each select coffee bean reflects our commitment 
-to Peruvian coffee growers, who bring the best 
-select coffee to your table.
+Experience the finest Peruvian coffee, handpicked from the Andes mountains. Each cup tells a story of tradition, quality, and passion dating back to 1930.
 
-.button
-Get Started
+.home__buttons
+Explore Menu
+Our Story
 
-
-========== PRODUCTS ==========
-.products__button
-Scroll Down
-
-.products__description
-We strive to form deep partnerships with farmers 
-from all over the world to create perspective 
-together and form healthy working relationships 
-built on trust and respect.
-
-.products__name .products__price
-Classic Coffee
-₹1,490
-
-Black coffee
-₹2,070
-
-Strong coffee
-₹2,730
+.home__stats
+90+ Coffee Varieties
+93 Years of Heritage
+50k+ Happy Customers
 
 
 ========== ABOUT ==========
-.section__title
-Our History
+.section-tag
+Our Story
 
-.about__description
-We make and grow the best coffee in Peru, accompanying 
-families since 1930, with professional workers who 
-harvest, collect and select the coffee with quality 
-work, thus providing exquisite coffee to enjoy together 
-as a family.
+.section-title
+A Legacy of Exceptional Coffee
 
+.section-subtitle
+From the misty highlands of Peru to your morning cup
 
-========== STEPS ==========
-.section__title
-Steps of manufacturing our products
+.about__experience
+93 Years of Excellence
 
-.steps__circle .steps__description
-01
-Harvest occurs annually when the coffee 
-beans reach maturity and are collected 
-for processing.
-
-02
-The beans are dried using a wet or dry 
-technique, depending on the taste we want 
-to obtain.
-
-03
-The coffee is roasted and acquires 
-its flavor by processing the grain 
-in ovens.
+.about__feature
+100% Organic - All our coffee beans are grown without pesticides or chemicals, ensuring a pure and natural taste in every cup.
+Handpicked with Care - Our expert farmers hand-select only the ripest cherries, guaranteeing superior flavor and quality.
+Freshly Roasted - Each batch is roasted to order, locking in the rich aromatics and delivering peak freshness to your door.
+Sustainably Sourced - We partner directly with Peruvian farmers, ensuring fair wages and environmentally responsible practices.
 
 
-========== TESTIMONIAL ==========
-.section__title
-Coffee is the best drink in the 
-morning, it keeps you focused.
+========== PRODUCTS ==========
+.section-tag
+Our Menu
 
-.testimonial__name
-Jhon Doe
+.section-title
+Discover Our Finest Selections
+
+.section-subtitle
+Each blend crafted to deliver a unique and memorable experience
+
+.products__filter
+All
+Espresso
+Brewed
+Specialty
+Cold
+
+.products__name .products__price
+Classic Espresso - ₹1,490 (250g) - Bestseller - Bold and intense single-origin espresso from Peru
+Black Coffee - ₹2,070 (250g) - Smooth and rich dark roast for the purist
+Strong Coffee - ₹2,730 (250g) - New - Extra bold blend with deep chocolatey notes
+Pour Over Blend - ₹1,900 (250g) - Light and floral, perfect for slow mornings
+Cold Brew Reserve - ₹1,650 (500ml) - Popular - Slow-steeped 24hr cold brew, smooth and refreshing
+Caramel Latte Blend - ₹2,320 (250g) - New - Sweet caramel notes with a creamy vanilla finish
+
+
+========== PROCESS ==========
+.section-tag
+How It Works
+
+.section-title
+From Bean to Cup
+
+.section-subtitle
+A meticulous 4-step process to deliver perfection
+
+.process__step
+01 Sourcing - We partner directly with Peruvian farmers in the Andes, selecting only the highest-grade Arabica beans grown at optimal altitudes.
+02 Drying - Beans are carefully dried using wet or dry processing methods, depending on the flavor profile we want to achieve.
+03 Roasting - Master roasters bring out unique flavors through precise temperature control and timing, unlocking each bean's full potential.
+04 Brewing - Freshly roasted beans are ground and brewed to deliver an exceptional cup with rich aromatics and smooth flavor.
+
+
+========== TESTIMONIALS ==========
+.section-tag
+Testimonials
+
+.section-title
+What Our Customers Say About Us
+
+.section-subtitle
+Real reviews from our beloved coffee community
+
+.testimonial-card
+Sarah Mitchell (Coffee Enthusiast) - 5 stars - "The best coffee I've ever had! The Classic Espresso is incredibly smooth and bold. I've been ordering from Coffetto for over a year now and won't switch to anything else."
+James Rodriguez (Regular Customer) - 5 stars - "The Cold Brew Reserve is my go-to during summer. It's smooth, not bitter at all, and you can really taste the quality. The packaging keeps it fresh for days!"
+Emily Chen (Gift Buyer) - 4.5 stars - "I gifted the Strong Coffee to my dad and he loved it. The chocolatey notes are amazing. Now the whole family orders from Coffetto. Great quality at a fair price."
+Marcus Thompson (Professional Barista) - 5 stars - "As a barista, I'm very particular about my coffee at home. Coffetto's Pour Over Blend is exceptional. The flavor clarity and consistency are top-notch every single time."
+
+
+========== GALLERY ==========
+.section-tag
+Gallery
+
+.section-title
+Moments of Coffee Joy
+
+
+========== CONTACT ==========
+.section-tag
+Get in Touch
+
+.section-title
+Visit Us or Say Hello
+
+.section-subtitle
+We'd love to hear from you. Reach out for orders, partnerships, or just to chat about coffee.
+
+.contact__details
+Location: 123 Coffee Lane, Lima, Peru
+Phone: +51 123 456 789
+Email: hello@coffetto.com
+Hours: Mon-Sat: 7AM - 9PM, Sun: 8AM - 6PM
+
+
+========== NEWSLETTER ==========
+.newsletter__title
+Stay Caffeinated
+
+.newsletter__description
+Subscribe for exclusive deals, brewing tips, and early access to new blends.
 
 
 ========== FOOTER ==========
 .footer__logo
 Coffetto
 
-.footer__title
-Sign up for our newsletter
+.footer__brand-text
+Premium Peruvian coffee, delivered fresh to your door. Crafted with passion since 1930.
 
-.footer__input - placeholder
-Enter e-mail address
+.footer__links-title
+Quick Links: Home, About Us, Products, Our Process, Contact
+Support: FAQ, Shipping Policy, Return Policy, Privacy Policy, Terms of Service
 
-.footer__button
-Subscribe
-
-.footer__description
-We care about your data. Read our 
-Privacy Policy
-
-.footer__social-link
-https://www.facebook.com/
-https://www.instagram.com/
-https://twitter.com/
+.footer__contact
+123 Coffee Lane, Lima, Peru
++51 123 456 789
+hello@coffetto.com
 
 .footer__copy
-&#169; Copyright Bedimcode. All rights reserved
+© 2026 Coffetto. All rights reserved. Crafted with ❤ in Peru.

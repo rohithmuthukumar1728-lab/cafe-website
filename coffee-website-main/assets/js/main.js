@@ -142,11 +142,55 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+function performSearch(term) {
+    if (!term.trim()) return;
+
+    const normalizedTerm = term.toLowerCase().trim();
+
+    // First, reset all product filters to show all products
+    filterButtons.forEach(btn => btn.classList.remove('active-filter'));
+    const allBtn = document.querySelector('.products__filter[data-filter="all"]');
+    if (allBtn) allBtn.classList.add('active-filter');
+
+    // Find matching product cards
+    let found = 0;
+    productCards.forEach(card => {
+        const name = card.querySelector('.product-card__name')?.textContent.toLowerCase() || '';
+        const desc = card.querySelector('.product-card__desc')?.textContent.toLowerCase() || '';
+        const category = card.dataset.category?.toLowerCase() || '';
+
+        if (name.includes(normalizedTerm) || desc.includes(normalizedTerm) || category.includes(normalizedTerm)) {
+            card.classList.remove('hidden');
+            card.style.animation = 'fadeIn .4s ease forwards';
+            found++;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+
+    // Scroll to products section
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+
+    setTimeout(() => {
+        closeSearch();
+        if (found > 0) {
+            showToast(`Found ${found} result${found > 1 ? 's' : ''} for "${term}"`, 'success');
+        } else {
+            showToast(`No results found for "${term}"`, 'info');
+        }
+    }, 300);
+}
+
+searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        performSearch(searchInput.value);
+    }
+});
+
 searchSuggestions.forEach(suggestion => {
     suggestion.addEventListener('click', () => {
         searchInput.value = suggestion.dataset.term;
-        showToast(`Searching for "${suggestion.dataset.term}"...`, 'info');
-        setTimeout(closeSearch, 500);
+        performSearch(suggestion.dataset.term);
     });
 });
 
